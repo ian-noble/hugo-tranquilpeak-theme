@@ -100,9 +100,9 @@
     {{ end }}
 
     {{ if .Params.ga.async }}
-      {{ template "_internal/google_analytics_async.html" . }}
+      {{ partial "internal/google_analytics_async.html" . }}
     {{ else }}
-      {{ template "_internal/google_analytics.html" . }}
+      {{ partial "internal/google_analytics.html" . }}
     {{ end }}
     {{ partial "head_end.html" . }}
   </head>
